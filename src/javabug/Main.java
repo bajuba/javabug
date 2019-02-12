@@ -1,4 +1,5 @@
 package javabug;
+import java.util.Scanner;
 
 import java.util.Scanner;
 
@@ -6,11 +7,14 @@ class Main
 {
 	public static void main(String[] args) 
 	{
+public class Main {
+	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		//System.out.println("Hello");
-		
+		// System.out.println("Hello");
+
 		Stage myStage = new Stage();
-		System.out.println(myStage.draw());
+
+		
 		
 		Bug tim = new Bug();
 		Scanner scanner = new Scanner (System.in);
@@ -19,6 +23,16 @@ class Main
 			System.out.println(tim.myPos());
 			scanner.nextLine();
 		}
+		Scanner scanner = new Scanner(System.in);  // Create a Scanner object
 		
+		//world loop render loop
+		while(true)
+		{
+		System.out.println(myStage.draw());
+	    //System.out.println("");
+		tim.moveRandom();
+		//System.out.println(tim.myPos());
+		scanner.nextLine();
+		}
 	}
 }
