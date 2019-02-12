@@ -1,5 +1,7 @@
 package javabug;
 
+import java.util.Scanner;
+
 class Main
 {
 	public static void main(String[] args) 
@@ -11,8 +13,12 @@ class Main
 		System.out.println(myStage.draw());
 		
 		Bug tim = new Bug();
-		tim.moveRandom();
-		System.out.println(tim.myPos());
+		Scanner scanner = new Scanner (System.in);
+		while(true) {
+			tim.moveRandom();
+			System.out.println(tim.myPos());
+			scanner.nextLine();
+		}
 		
 	}
 }
