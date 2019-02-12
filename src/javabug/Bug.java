@@ -22,33 +22,6 @@ public class Bug {
 		moveRandom();
 	}
 
-	public void moveRandom() {
-		// increase x and y -1, 0, or 1
-		int randomx = (int) (Math.random() * 3 - 1);
-		int randomy = (int) (Math.random() * 3 - 1);
-		//System.out.println(randomx); //DEBUG
-		//System.out.println(randomy); //DEBUG
-
-		if (randomx == -1) {
-			Xpos--;
-		}
-		if (randomx == 1)  {
-			Xpos++;
-		}
-		if (randomy == -1) {
-			Ypos--;
-		}
-		if (randomy == 1) {
-			Ypos++;
-		}
-		if (Xpos == -1 || Ypos == -1) {
-			Xpos++;
-			Ypos++;
-		}
-		if (Ypos == 10 || Xpos == 10) {
-			Xpos--;
-			Ypos--;
-		}
 
 	public void moveRandom()
 	{

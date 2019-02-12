@@ -1,12 +1,7 @@
 package javabug;
 import java.util.Scanner;
 
-import java.util.Scanner;
 
-class Main
-{
-	public static void main(String[] args) 
-	{
 public class Main {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
