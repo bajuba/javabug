@@ -20,22 +20,16 @@ public class Bug {
 	}
 
 	public void moveRandom() {
-		int random = (int) (Math.random() * 4);
-		System.out.println(random);
-		switch (random) {
-		case 0:
-			Xpos++;
-			break;
-		case 1:
+		int randomX = (int) (Math.random() * 3 - 1);
+		int randomY = (int) (Math.random() * 3 - 1);
+		if (randomX == -1 && Xpos != 0)
 			Xpos--;
-			break;
-		case 2:
-			Ypos++;
-			break;
-		case 3:
+		if (randomX == 1 && Xpos != 10)
+			Xpos++;
+		if (randomY == -1 && Ypos != 0)
 			Ypos--;
-			break;
-		}
+		if (randomY == 1 && Ypos != 10)
+			Ypos++;
 
 	}
 

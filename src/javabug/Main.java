@@ -7,10 +7,11 @@ public class Main {
 
 		Stage myStage = new Stage();
 		System.out.println(myStage.draw());
-		
+
 		Bug tim = new Bug();
-		tim.moveRandom();
-		System.out.println(tim.myPos());
-		
+		for (int i = 0; i < 5; i++) {
+			tim.moveRandom();
+			System.out.println(tim.myPos());
+		}
 	}
 }
