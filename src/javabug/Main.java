@@ -1,14 +1,13 @@
 package javabug;
 import java.util.Scanner;
 
-class Main
-{
-	public static void main(String[] args) 
-	{
+public class Main {
+	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		//System.out.println("Hello");
-		
+		// System.out.println("Hello");
+
 		Stage myStage = new Stage();
+
 		
 		
 		Bug tim = new Bug();
@@ -23,6 +22,5 @@ class Main
 		//System.out.println(tim.myPos());
 		scanner.nextLine();
 		}
-		
 	}
 }
