@@ -21,15 +21,20 @@ public class Bug {
 
 	public void moveRandom() {
 		int random = (int) (Math.random() * 4);
+		System.out.println(random);
 		switch (random) {
 		case 0:
 			Xpos++;
+			break;
 		case 1:
 			Xpos--;
+			break;
 		case 2:
 			Ypos++;
+			break;
 		case 3:
 			Ypos--;
+			break;
 		}
 
 	}
