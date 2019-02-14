@@ -1,17 +1,16 @@
 package javabug;
 
-public class Stage 
-{
+public class Stuff {
 	String[][] stage = new String[11][11];
-	String blankGround=".";
-	String[][] stuff = new String[11][11];
-	Stage()
+	
+	
+	Stuff()
 	{
 		for(int i = 0; i<=10; i++ )
 		{
 			for(int j =0; j<=10;j++)
 			{
-				this.stage[i][j] = blankGround;
+				this.stage[i][j] = "";
 			}
 		}
 	}
@@ -24,10 +23,8 @@ public class Stage
 			
 			for(int j =0; j<=10;j++)
 			{
-				if(stuff[i][j] == "")
-					result += this.stage[i][j];
-				else
-					result += this.stuff[i][j];
+				result += this.stage[i][j];
+				
 			}
 			result += "\n";
 		}
