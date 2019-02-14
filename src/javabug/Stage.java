@@ -53,7 +53,9 @@ public class Stage
 	{
 	for(int i=0; i<stage.length; i++)
 		  for(int j=0; j<stage[i].length; j++)
-		    stage[i][j]=aboveStage[i][j];
+		  {
+			 aboveStage[i][j]=stage[i][j];
+		  }
 	}
 	public String drawAboveStage()
 	{

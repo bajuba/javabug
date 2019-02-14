@@ -1,6 +1,8 @@
 package javabug;
 
-import java.util.Scanner;
+import java.util.Scanner;  
+
+
 
 class Main
 {
@@ -16,18 +18,20 @@ class Main
 		Scanner scanner = new Scanner (System.in);
 
 		
-		
+		/*
 		//world loop render loop
 		while(true)
 		{
-		myStage.drawStuff();
-		System.out.println(myStage.drawAboveStage());
-		
-	    //System.out.println("");
-		tim.moveRandom();
-		//System.out.println(tim.myPos());
-		scanner.nextLine();
+			System.out.println("\n\n\n\n\n\n\n\n\n\n");
+			myStage.drawStuff();
+			System.out.println(myStage.drawAboveStage());
+			
+		    //System.out.println("");
+			tim.moveRandom();
+			//System.out.println(tim.myPos());
+			scanner.nextLine();
 		}
+		*/
 	}
 }
 
