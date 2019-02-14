@@ -17,6 +17,7 @@ public class Main {
 		while(true)
 		{
 		System.out.println(myStage.draw());
+		
 	    //System.out.println("");
 		tim.moveRandom();
 		//System.out.println(tim.myPos());
