@@ -18,7 +18,7 @@ class Main
 		Scanner scanner = new Scanner (System.in);
 
 		
-		/*
+		
 		//world loop render loop
 		while(true)
 		{
@@ -29,9 +29,15 @@ class Main
 		    //System.out.println("");
 			tim.moveRandom();
 			//System.out.println(tim.myPos());
-			scanner.nextLine();
+			//scanner.nextLine();
+			try {
+				Thread.sleep(500);
+			} catch (InterruptedException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
 		}
-		*/
+		
 	}
 }
 
