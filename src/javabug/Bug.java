@@ -4,7 +4,7 @@ import java.util.Random;
 import java.lang.Math.*;
 
 public class Bug {
-	char body = '§';
+	char body = 'ï¿½';
 	int Xpos = 0;
 	int Ypos = 0;
 
@@ -21,6 +21,8 @@ public class Bug {
 	public void think() {
 		moveRandom();
 	}
+
+
 	public void moveRandom()
 	{
 		//increase x and y -1, 0, or 1
