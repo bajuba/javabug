@@ -4,7 +4,7 @@ import java.util.Random;
 import java.lang.Math.*;
 
 public class Bug {
-	char body = '�';
+	String body = "X";
 	int Xpos = 0;
 	int Ypos = 0;
 
@@ -12,7 +12,7 @@ public class Bug {
 
 	}
 
-	Bug(char inputBody, int X, int Y) {
+	Bug(String inputBody, int X, int Y) {
 		this.body = inputBody;
 		this.Xpos = X;
 		this.Ypos = Y;

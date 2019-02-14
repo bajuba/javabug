@@ -11,21 +11,18 @@ class Main
 
 		Stage myStage = new Stage();
 
-		
-		
 		Bug tim = new Bug();
+		myStage.stuff.add(tim);
+		
 		Scanner scanner = new Scanner (System.in);
-		while(true) {
-			tim.moveRandom();
-			System.out.println(tim.myPos());
-			scanner.nextLine();
-		}
-		Scanner scanner = new Scanner(System.in);  // Create a Scanner object
+
+		
 		
 		//world loop render loop
 		while(true)
 		{
-		System.out.println(myStage.draw());
+		myStage.drawStuff();
+		System.out.println(myStage.drawAboveStage());
 		
 	    //System.out.println("");
 		tim.moveRandom();
