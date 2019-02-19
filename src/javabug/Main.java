@@ -12,8 +12,11 @@ class Main
 
 		Stage myStage = new Stage();
 
-		Bug tim = new Bug();
-		myStage.stuff.add(tim);
+		Bug bug1 = new Bug("X",0,0);
+		myStage.stuff.add(bug1);
+		
+		Plant plant1 = new Plant("Y", 5, 5); 
+		myStage.stuff.add(plant1);
 		
 		Scanner scanner = new Scanner (System.in);
 
@@ -27,7 +30,8 @@ class Main
 			System.out.println(myStage.drawAboveStage());
 			
 		    //System.out.println("");
-			tim.moveRandom();
+			bug1.think();
+			plant1.grow();
 			//System.out.println(tim.myPos());
 			//scanner.nextLine();
 			try {

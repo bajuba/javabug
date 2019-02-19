@@ -3,19 +3,14 @@ package javabug;
 import java.util.Random; 
 import java.lang.Math.*;
 
-public class Bug {
-	String body = "X";
-	int Xpos = 0;
-	int Ypos = 0;
+public class Bug extends Stuff {
+	int belly = 50;
+	int maxBelly = 100;
 
-	Bug() {
-
-	}
+	
 
 	Bug(String inputBody, int X, int Y) {
-		this.body = inputBody;
-		this.Xpos = X;
-		this.Ypos = Y;
+		super(inputBody, X, Y);
 	}
 
 	public void think() {

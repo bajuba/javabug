@@ -7,7 +7,7 @@ public class Stage
 	String[][] stage = new String[11][11];
 	String[][] aboveStage = new String [11][11];
 	String blankGround=".";
-	ArrayList<Bug> stuff = new ArrayList<Bug>(1);
+	ArrayList<Stuff> stuff = new ArrayList<Stuff>(2);
 	
 	Stage()
 	{
@@ -40,13 +40,13 @@ public class Stage
 	{
 		//draw the stage into stuff (copy stage into stuff)
 		copyStage();
-		this.stuff.forEach((n) -> addBug(n));
+		this.stuff.forEach((n) -> addStuff(n));
 		
 
 	}
-	public void addBug(Bug myBug)
+	public void addStuff(Stuff myStuff)
 	{
-	  this.aboveStage[myBug.Xpos][myBug.Ypos] = myBug.body;	
+	  this.aboveStage[myStuff.Xpos][myStuff.Ypos] = myStuff.body;	
 	}
 	//copy stage into aboveStage
 	public void copyStage()
