@@ -30,7 +30,7 @@ class Main
 			System.out.println(myStage.drawAboveStage());
 			
 		    //System.out.println("");
-			bug1.think();
+			bug1.think(myStage);
 			plant1.grow();
 			//System.out.println(tim.myPos());
 			//scanner.nextLine();

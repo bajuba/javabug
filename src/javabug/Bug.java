@@ -13,10 +13,21 @@ public class Bug extends Stuff {
 		super(inputBody, X, Y);
 	}
 
-	public void think() {
-		moveRandom();
+	public void think(Stage myStage) {
+		if(look(myStage)==0)
+			moveRandom();
+		else if(look(myStage)==1)
+			moveRandom();
+		else if(look(myStage)==2)
+			moveRandom();
+		else if(look(myStage)==3)
+			moveRandom();
 	}
-
+	
+	public int look(Stage myStage){
+		int feeling = 0;
+		return feeling;
+	}
 
 	public void moveRandom()
 	{

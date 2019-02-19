@@ -73,4 +73,10 @@ public class Stage
 		}
 		return result;
 	}
+//	public Stuff nearestPlant(int x, int y)
+//	{
+//		
+//		return yourPlant;
+//	}
+	
 }
