@@ -42,15 +42,40 @@ public class Bug extends Stuff {
 			}
 			
 		//0,-1
-		
+		if(this.Ypos != 0 )
+			if(myStage.aboveStage[this.Xpos 0][this.Ypos-1] == "Y")
+			{
+				feeling = 1;
+				return feeling;
+			}
 		//1,-1
-		
+		if(this.Xpos != 0 && this.Ypos != 0 )
+			if(myStage.aboveStage[this.Xpos1][this.Ypos-1] == "Y")
+			{
+				feeling = 1;
+				return feeling;
 		//1, 0
-		
+		if(this.Xpos != 0 )
+			if(myStage.aboveStage[this.Xpos-1][this.Ypos 0] == "Y")
+			{
+				feeling = 1;
+				return feeling;
+			}
+				
 		//1, 1
-		
+		if(this.Xpos != 0 && this.Ypos != 0 )
+			if(myStage.aboveStage[this.Xpos 1][this.Ypos 1] == "Y")
+			{
+				feeling = 1;
+				return feeling;
+							}
 		//0, 1
-		
+		if(this.Xpos != 0 && this.Ypos != 0 )
+			if(myStage.aboveStage[this.Xpos 0][this.Ypos 1] == "Y")
+			{
+				feeling = 1;
+				return feeling;
+							}
 		//-1,-1
 		
 		//-1, 0
