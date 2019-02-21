@@ -70,12 +70,21 @@ public class Bug extends Stuff {
 				return feeling;
 							}
 		//0, 1
+<<<<<<< HEAD
 		if(this.Xpos != 0 && this.Ypos != 0 )
 			if(myStage.aboveStage[this.Xpos 0][this.Ypos 1] == "Y")
 			{
 				feeling = 1;
 				return feeling;
 							}
+=======
+		if(this.Ypos != 0 )
+			if(myStage.aboveStage[this.Xpos][this.Ypos-1] == "Y")
+			{
+				feeling = 1;
+				return feeling;
+			}
+>>>>>>> ec1396a70877f5d7619fe7a086996e23bc449297
 		//-1,-1
 		
 		//-1, 0
