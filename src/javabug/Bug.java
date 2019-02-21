@@ -14,14 +14,14 @@ public class Bug extends Stuff {
 	}
 
 	public void think(Stage myStage) {
-		if(look(myStage)==0)
+		//if(look(myStage)==0)
 			moveRandom();
-		else if(look(myStage)==1)
-			eatPlant(myStage.nearestPlant(Xpos,Ypos));
-		else if(look(myStage)==2)
-			moveRandom();
-		else if(look(myStage)==3)
-			moveRandom();
+		//else if(look(myStage)==1)
+			//eatPlant(myStage.nearestPlant(Xpos,Ypos));
+		//else if(look(myStage)==2)
+		//	moveRandom();
+		//else if(look(myStage)==3)
+		//	moveRandom();
 	}
 	
 	public int look(Stage myStage){

@@ -18,6 +18,8 @@ class Main
 		Plant plant1 = new Plant("Y", 5, 5); 
 		myStage.stuff.add(plant1);
 		
+		CarnivoreBug cbug1 = new CarnivoreBug("$", 7, 7);
+		myStage.stuff.add(cbug1);
 		Scanner scanner = new Scanner (System.in);
 
 		
@@ -32,6 +34,7 @@ class Main
 		    //System.out.println("");
 			bug1.think(myStage);
 			plant1.grow();
+			cbug1.moveRandom();
 			//System.out.println(tim.myPos());
 			//scanner.nextLine();
 			try {
